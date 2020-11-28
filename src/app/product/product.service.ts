@@ -29,19 +29,21 @@ export class ProductService {
 
   }
 
-  addProduct(json: any): Observable<any> {
-
-    return observableOf(this.product);
+  getStringValue(): string {
+    return 'getStringValue is working!';
   }
 
-  updateProduct(json: any): Observable<any> {
+  getPromiseValue(): Promise<string> {
 
-    return observableOf(this.product);
+    const promise = new Promise<string>((resolve, reject) => {
+      resolve('getPromiseValue is working!');
+    });
+
+    return promise;
   }
 
   getProduct(): Observable<any> {
 
     return observableOf(this.product);
   }
-
 }

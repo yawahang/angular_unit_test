@@ -21,7 +21,7 @@ export class ProductComponent implements OnInit {
   selection = new SelectionModel<MvProduct>(false, []);
 
   constructor(private ps: ProductService,
-              public dialog: MatDialog) {
+    public dialog: MatDialog) {
 
   }
 
